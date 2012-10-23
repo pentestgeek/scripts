@@ -1,0 +1,19 @@
+This repository is a collection of useful nessus scripts that will help assist on penetration tests
+
+This script accepts a file of IP addresses to be used for external testing. 
+The file is parsed and nmap run against the targets on off hours creating 
+output files which are uploaded to nessus. Nessus scans are then kicked
+off and when done results are emailed back to the user. 
+
+Usage: ruby nessus_http_api.rb [options] <targets_file>
+    -v, --verbose                    Output more information
+    -n, --server IP                  The IP address of the Nessus server
+        --port PORT                  The port of the Nessus server
+    -u, --username USER              Username of Nessus account
+    -p, --password PASS              Password to Nessus account
+    -c, --client CLIENTNAME          The name of the client
+    -e, --email EMAIL                The email to return results to
+    -s, --sleep                      Sleep tille 6pm
+    -a, --attach                     Attaches the Nessus file to email
+    -h, --help                       Display this screen
+

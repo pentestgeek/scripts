@@ -1,0 +1,8 @@
+This repository is a collection of nmap scripts that are useful for penetration
+testing engagements. Some scripts are use to automate large tasks while others 
+are used to parse nmap output.
+
+Some of the scripts may require that specific ruby gems are installed for proper
+functionality.
+
+If you have any questions please contact us.
